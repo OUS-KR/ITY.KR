@@ -8,13 +8,13 @@
 	
 	
 	<title>${PAGE_TITLE} - ITY.KR</title>
-	<link rel="canonical" href="https://ity.kr/">
+	<link rel="canonical" href="https://ity.kr/${CANONICAL_PATH}">
 	<meta name="title" content="${PAGE_TITLE} - ITY.KR">
-	<meta name="description" content="">
+	<meta name="description" content="${PAGE_DESC}">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="${PAGE_TITLE} - ITY.KR">
-	<meta property="og:description" content="">
-	<meta property="og:url" content="https://ity.kr/">
+	<meta property="og:description" content="${PAGE_DESC}">
+	<meta property="og:url" content="https://ity.kr/${CANONICAL_PATH}">
 	
 		
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap">
@@ -505,7 +505,7 @@
             Kakao.isInitialized();
             
             // Canonical URL
-            const canonical_url = 'https://ity.kr/';
+            const canonical_url = 'https://ity.kr/${CANONICAL_PATH}';
             
             function share_with_kakaotalk()
             {
